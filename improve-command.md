@@ -72,6 +72,10 @@ Only after user approval:
 - Apply the approved changes using Edit tool
 - Verify the changes were applied correctly
 - Confirm the improved command structure
+- **Stage and commit the improved command**:
+  - `git add [command-file-path]`
+  - `git commit -m "improve: enhance [command-name] based on usage experience - [brief description of changes]"`
+- Verify git operations completed successfully
 - **REMINDER: Restart Claude Code for changes to take effect**
 
 ## Success Criteria
@@ -79,6 +83,7 @@ Only after user approval:
 - Proposed concrete, actionable improvements
 - Got explicit user verification before making changes
 - Successfully applied improvements to the command file
+- **Automatically staged and committed the improved command to git**
 - Verified the updated command follows Claude Code conventions
 
 ## Quality Checks

@@ -68,6 +68,10 @@ Provide:
 - Key design decisions and rationale
 - Flexibility considerations for variations
 - Usage examples and scenarios
+- **Stage and commit the new command**:
+  - `git add [new-command-file-path]`
+  - `git commit -m "feat: add [command-name] command - [brief description of purpose]"`
+- Verify git operations completed successfully
 - **REMINDER: Restart Claude Code after creating the command for it to be available**
 
 ## Success Criteria
@@ -75,6 +79,7 @@ Provide:
 - Instructions are clear without requiring context from original conversation
 - Flexible enough for variations of the original task
 - Includes proper validation and verification steps
+- **Automatically staged and committed the new command to git**
 - Follows Claude Code slash command conventions
 
 ## Quality Checks
