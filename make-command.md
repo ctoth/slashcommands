@@ -69,7 +69,8 @@ Provide:
 - Flexibility considerations for variations
 - Usage examples and scenarios
 - **Stage and commit the new command**:
-  - `git add [new-command-file-path]`
+  - If command is in `~/.claude/commands/`: `cd ~/.claude/commands && git add [command-name].md`
+  - If command is in project `.claude/commands/`: `git add .claude/commands/[command-name].md`
   - `git commit -m "feat: add [command-name] command - [brief description of purpose]"`
 - Verify git operations completed successfully
 - **REMINDER: Restart Claude Code after creating the command for it to be available**

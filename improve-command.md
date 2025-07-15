@@ -73,7 +73,8 @@ Only after user approval:
 - Verify the changes were applied correctly
 - Confirm the improved command structure
 - **Stage and commit the improved command**:
-  - `git add [command-file-path]`
+  - If command is in `~/.claude/commands/`: `cd ~/.claude/commands && git add [command-name].md`
+  - If command is in project `.claude/commands/`: `git add .claude/commands/[command-name].md`
   - `git commit -m "improve: enhance [command-name] based on usage experience - [brief description of changes]"`
 - Verify git operations completed successfully
 - **REMINDER: Restart Claude Code for changes to take effect**
