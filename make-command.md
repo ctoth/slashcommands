@@ -1,11 +1,10 @@
 ---
 description: Analyze successful workflow interactions and generate reusable slash commands
-allowed-tools: [mcp__continuous-thinking__sequentialthinking, Read, Write, Bash]
+allowed-tools: [mcp__continuous-thinking__sequentialthinking, Read, Edit, Bash]
 ---
 
 # Generate Slash Command from Successful Workflow
 
-## Context Gathering
 !`pwd && ls -la .claude/commands/ 2>/dev/null || echo "No commands directory found"`
 
 ## Your Task
@@ -30,36 +29,9 @@ Determine the command design:
 - Define success criteria and validation steps
 
 ### Phase 3: Command Generation
-Create the slash command with this structure:
-```markdown
----
-description: [One-line description for command menu]
-allowed-tools: [Optional: specific tools this command can use]
----
+**First, read the command template**: Use the Read tool on `~/.claude/commands/command-template.md` to get the standard structure and design principles.
 
-# [Task Title]
-
-## Context Gathering
-!`[bash commands to gather current state]`
-
-## Your Task
-[Clear instructions incorporating $ARGUMENTS where needed]
-
-### Phase 1: Understanding
-[Steps to analyze and understand the problem]
-
-### Phase 2: Planning
-[Steps to create an approach]
-
-### Phase 3: Implementation
-[Steps to execute the solution]
-
-### Phase 4: Verification
-[Steps to validate the work]
-
-## Success Criteria
-- [Specific checkpoints]
-```
+Create the slash command following the template structure and best practices outlined in the template file.
 
 ### Phase 4: Command Metadata and Documentation
 Provide:
@@ -90,3 +62,4 @@ Before finalizing:
 - Would a new user understand when and how to use this command?
 - Are edge cases and variations considered?
 - Is the command structure efficient and maintainable?
+
