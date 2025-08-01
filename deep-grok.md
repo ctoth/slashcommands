@@ -1,6 +1,6 @@
 ---
 description: Collaboratively investigate and deeply understand a library's architecture, purpose, and design philosophy
-allowed-tools: Read, LS, Glob, Grep, TodoWrite, Edit, Write, mcp__continuous-thinking__sequentialthinking, mcp__zen__chat, mcp__zen__thinkdeep, mcp__zen__analyze
+allowed-tools: Bash, Read, LS, Glob, Grep, TodoWrite, Edit, Write, mcp__continuous-thinking__sequentialthinking, mcp__zen__chat, mcp__zen__thinkdeep, mcp__zen__analyze
 ---
 
 # Deep Library Investigation and Understanding
