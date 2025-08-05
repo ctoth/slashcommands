@@ -11,7 +11,7 @@ Creates a comprehensive, atomic-commit execution plan with NO FUZZY BITS. The pl
 **Planning phase resolves EVERYTHING, execution is purely mechanical**
 - Every step = exactly one atomic commit
 - Zero decisions required during execution
-- Complete specifications with exact code and commands
+- Complete specifications with code and commands
 - Exhaustive upfront research and resolution
 
 ## Process
@@ -66,7 +66,7 @@ Break down the work into atomic units where each unit:
 #### 5. Precise Step Specification
 For each atomic unit, provide:
 - **Exact files to modify** (full paths)
-- **Exact code to write** (complete code snippets, not descriptions)
+- **code references and descriptions of what to write** (Useful, actionable descriptions)
 - **Exact commands to run** (with expected outputs)
 - **Exact validation steps** (specific tests, checks, build commands)
 - **Exact commit message** (pre-written, following project conventions)
