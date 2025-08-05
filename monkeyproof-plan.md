@@ -66,10 +66,11 @@ Break down the work into atomic units where each unit:
 #### 5. Precise Step Specification
 For each atomic unit, provide:
 - **Exact files to modify** (full paths)
-- **code references and descriptions of what to write** (Useful, actionable descriptions)
+- **What code needs to be written where** (clear specifications of functionality, not complete implementations)
 - **Exact commands to run** (with expected outputs)
 - **Exact validation steps** (specific tests, checks, build commands)
 - **Exact commit message** (pre-written, following project conventions)
+- **Edge cases to handle** (comprehensive identification of all scenarios)
 
 #### 6. Dependency Ordering
 Sequence steps so that:
@@ -83,11 +84,12 @@ Sequence steps so that:
 
 #### 7. Create Complete Execution Specification
 Generate a plan where someone can:
-- Copy/paste exact code snippets
+- Understand exactly what functionality to implement where
 - Run exact commands with expected outputs
 - Validate each step with precise criteria
 - Commit with pre-written messages
 - Never need to make decisions or do research
+- Handle all identified edge cases systematically
 
 #### 8. Quality Assurance Planning
 Include explicit steps for:
@@ -109,22 +111,39 @@ For each step, specify:
 #### 10. Branch Creation (if chosen)
 Create and switch to feature branch with descriptive name
 
-#### 11. Generate TodoWrite List
-Convert the complete plan into TodoWrite format with:
-- Each atomic step as a separate todo
-- High priority for core functionality
-- Medium priority for supporting features  
-- Low priority for documentation and final validation
-- Clear, actionable descriptions with exact specifications
+## EXECUTION BEGINS HERE
 
-#### 12. Final Plan Validation
-Ensure the plan has:
+### Step 0: Comprehensive Todo List Creation (CRITICAL FIRST STEP)
+**This is the bridge from planning to execution - EVERYTHING must be captured here.**
+
+Convert the complete plan into TodoWrite format with:
+- **Every single step** from the plan as a separate todo item
+- **All edge cases identified** during planning as separate todos
+- **What code needs to be written where** (not the exact code, but clear specifications)
+- **All validation and testing steps** as individual todos
+- **All error handling scenarios** as separate todos
+- High priority for core functionality
+- Medium priority for supporting features and edge cases
+- Low priority for documentation and final validation
+- Clear, actionable descriptions with exact file paths and specifications
+
+**The todo list should be so comprehensive that:**
+- Nothing from the planning phase is forgotten
+- Every edge case has a corresponding todo
+- Every file that needs modification has clear todos
+- Every test that needs writing is captured
+- Every validation step is included
+- Someone could execute purely from the todo list
+
+#### 11. Final Plan Validation
+Ensure the plan and todo list have:
 - No ambiguous steps or fuzzy bits
-- Complete code specifications for all changes
+- Clear specifications for what functionality goes where
 - Exact validation criteria for each step
 - Pre-written commit messages
 - Clear success/failure criteria
-- Comprehensive error handling
+- Comprehensive edge case coverage
+- Everything from planning captured in the todo list
 
 ## Success Criteria
 
