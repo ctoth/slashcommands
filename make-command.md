@@ -1,6 +1,6 @@
 ---
 description: Analyze successful workflow interactions and generate reusable slash commands
-allowed-tools: [mcp__continuous-thinking__sequentialthinking, Read, Edit, Bash]
+allowed-tools: mcp__continuous-thinking__sequentialthinking, Read, Edit, Bash
 ---
 
 # Generate Slash Command from Successful Workflow
